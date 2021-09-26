@@ -1,10 +1,9 @@
 import React from 'react';
-import { Hero,  SectionLeft,  SectionRight } from '../index';
+import { SectionLeft,  SectionRight } from '../index';
 
 function MainContent() {
   return (
-    <div>
-      <Hero />
+    <div id="main-content">
       <SectionRight />
       <SectionLeft />
       <SectionRight />

@@ -2,10 +2,10 @@ import React from 'react';
 
 function SectionLeft() {
   return(
-    <section className="flex bg-gray-200">
+    <section className="flex bg-yellow-100 p-4">
       <table className="m-auto text-center">
         <tr>
-          <td className="w-3/5">
+          <td className="w-3/5 p-2">
             <ul className="text-left">
               <li>Nome do Projeto</li>
               <hr />

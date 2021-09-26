@@ -1,11 +1,11 @@
 import React from 'react';
+import { DynamicPhrase } from '..';
 
 function Hero() {
   return(
-    <section className="flex h-screen bg-blue-600">
-      <div className="m-auto text-center">
-        <h1>Icaro</h1>
-        <button className="bg-white">Meus Projetos</button>
+    <section className="flex h-screen">
+      <div className="m-auto text-yellow-200">
+        <DynamicPhrase />
       </div>
   </section>
   )
