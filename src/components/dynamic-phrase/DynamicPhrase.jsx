@@ -14,7 +14,7 @@ function DynamicPhrase() {
   },[phrase])
 
   return(
-    <section>
+    <section className="text-yellow-200 p-4">
       <div className="text-4xl">
         <p>
           <span>{ phrase }</span>

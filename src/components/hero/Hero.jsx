@@ -1,11 +1,12 @@
 import React from 'react';
-import { DynamicPhrase } from '..';
+import { ContactBox, DynamicPhrase } from '..';
 
 function Hero() {
   return(
     <section className="flex h-screen">
-      <div className="m-auto text-yellow-200">
+      <div className="m-auto">
         <DynamicPhrase />
+        <ContactBox />
       </div>
   </section>
   )
