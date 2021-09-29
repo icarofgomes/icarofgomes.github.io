@@ -2,22 +2,22 @@ import React from 'react';
 
 function ContactBox() {
   return (
-    <div className="bg-yellow-100 w-56 h-24 m-auto">
-      <div className="text-center p-4 flex-wrap">
+    <div className="bg-yellow-100 my-2">
+      <div className="">
         <a
-          className="p-2"
+          className=""
           href="https://www.linkedin.com/in/icaro-ferreira-gomes-b99681110/"
         >
           Linkedin
         </a>
         <a
-          className="p-2"
+          className=""
           href="https://github.com/icarofgomes"
         >
           Github
         </a>
       </div>
-      <div className="w-12 m-auto">
+      <div className="">
         <button>Contato</button>
       </div>
     </div>

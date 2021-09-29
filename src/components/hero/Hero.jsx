@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContactBox, DynamicPhrase } from '..';
+import { CardBox, ContactBox, DynamicPhrase } from '..';
 
 function Hero() {
   return(
@@ -7,6 +7,7 @@ function Hero() {
       <div className="m-auto">
         <DynamicPhrase />
         <ContactBox />
+        <CardBox />
       </div>
   </section>
   )

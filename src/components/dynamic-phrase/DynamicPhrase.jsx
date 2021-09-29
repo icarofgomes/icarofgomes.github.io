@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-const message = `ICARO FERREIRA | DESENVOLVEDOR FRONTEND`;
+const message = `ICARO FERREIRA - DESENVOLVEDOR FRONTEND`;
 let i = 0;
 
 function DynamicPhrase() {
@@ -14,12 +14,12 @@ function DynamicPhrase() {
   },[phrase])
 
   return(
-    <section className="text-yellow-200 p-4">
-      <div className="text-4xl">
+    <section className="text-yellow-200">
+      <div className="">
         <p>
           <span>{ phrase }</span>
           <span className="animate-pulse">|</span>
-          </p>
+        </p>
       </div>
   </section>
   )
