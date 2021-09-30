@@ -7,7 +7,7 @@ function Hero() {
       <div className="m-auto">
         <DynamicPhrase />
         <ContactBox />
-        <CardBox />
+        <CardBox bodyDisplay={ true }/>
       </div>
   </section>
   )
