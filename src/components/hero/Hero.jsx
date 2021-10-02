@@ -1,5 +1,6 @@
 import React from 'react';
 import { CardBox, ContactBox, DynamicPhrase } from '..';
+import projects from '../../data';
 
 function Hero() {
   return(
@@ -7,7 +8,7 @@ function Hero() {
       <div className="m-auto">
         <DynamicPhrase />
         <ContactBox />
-        <CardBox bodyDisplay={ true }/>
+        <CardBox bodyDisplay={ true } project={ projects[0] }/>
       </div>
   </section>
   )

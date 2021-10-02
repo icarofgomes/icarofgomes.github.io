@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function CardBox({ bodyDisplay = false }) {
+function CardBox({ bodyDisplay = false, project: { name, image, description, techs } }) {
   const [show, setShow] = useState(bodyDisplay);
   
   return(
@@ -9,20 +9,18 @@ function CardBox({ bodyDisplay = false }) {
         className="flex space-x-4 bg-yellow-400"
         onClick={() => setShow(!show)}
       >
-        <h2>Nome do Card</h2>
+        <h2>{ name }</h2>
         <div>blabla</div>
       </header>
       {
         show
         && (
           <main>
-            <div>Imagem</div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, temporibus. Debitis, magnam obcaecati! Perspiciatis ex, natus corporis consectetur iusto provident autem odio reprehenderit temporibus quas, hic qui culpa sapiente cumque?</p>
+            <img src={ image } width="250px" alt={ name } />
+            <p>{ description }</p>
             <ul>
-              <li>JavaScript</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>React</li>
+              <h2>Tecnologias</h2>
+              { techs.map((tech) => <li>{ tech }</li>)}
             </ul>
           </main>
         )
