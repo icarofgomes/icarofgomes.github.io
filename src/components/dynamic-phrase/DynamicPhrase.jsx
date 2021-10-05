@@ -14,8 +14,8 @@ function DynamicPhrase() {
   },[phrase])
 
   return(
-    <section className="text-yellow-200 text-center pt-28 text-4xl w-full">
-      <div className="">
+    <section className="text-yellow-200 text-center pt-6 text-4xl w-full">
+      <div className="md:mt-20">
         <h1>
           <span>{ phrase }</span>
           <span className="animate-pulse">|</span>
