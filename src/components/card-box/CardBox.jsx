@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import '../components.css';
 
-function CardBox({ bodyDisplay = false, project: { name, image, description, techs } }) {
+function CardBox({
+  bodyDisplay = false,
+  project: { name, image, description, techs, github, link }
+}) {
   const [show, setShow] = useState(bodyDisplay);
   
   return(
@@ -41,7 +44,7 @@ function CardBox({ bodyDisplay = false, project: { name, image, description, tec
                   && 
                   <div className="flex justify-around">
                     <a
-                      href="https://github.com/icarofgomes/trybetrivia/tree/master"
+                      href={ github }
                       target="_blank"
                       rel="noreferrer noopener"
                       className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mt-2"
@@ -49,7 +52,7 @@ function CardBox({ bodyDisplay = false, project: { name, image, description, tec
                       Código
                     </a>
                     <a
-                      href="https://icarofgomes.github.io/trybetrivia/"
+                      href={ link }
                       target="_blank"
                       rel="noreferrer noopener"
                       className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mt-2"
