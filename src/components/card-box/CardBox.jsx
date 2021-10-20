@@ -29,7 +29,7 @@ function CardBox({
                 className="w-5/6 mx-auto rounded-lg md:w-2/6 md:rounded-none"
                 alt={ name }
               />
-              <div className="md:flex-column md:p-4 md:flex-grow">
+              <div className="md:flex-column md:p-4 md:flex-grow ">
                 <div className="text-left p-2">{ description }</div>
                 <div className="mb-4 md:mb-2">
                   <ul className="text-center mx-auto flex justify-around md:p-2">
