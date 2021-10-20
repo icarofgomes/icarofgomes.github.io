@@ -31,34 +31,36 @@ function CardBox({
               />
               <div className="md:flex-column md:p-4 md:flex-grow ">
                 <div className="text-left p-2">{ description }</div>
-                <div className="mb-4 md:mb-2">
-                  <ul className="text-center mx-auto flex justify-around md:p-2">
-                    { techs.map((tech, i) => (
-                      <li key={ i } className="shadow rounded text-sm bg-yellow-200 p-1 mx-1">
-                        { tech }
-                      </li>
-                    ))}
-                  </ul>
-                </div>
                 { !bodyDisplay
                   && 
-                  <div className="flex justify-around">
-                    <a
-                      href={ github }
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mt-2"
-                    >
-                      Código
-                    </a>
-                    <a
-                      href={ link }
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mt-2"
-                    >
-                      Visitar
-                    </a>
+                  <div className="flex flex-col">
+                    <div className="mb-4 md:mb-2">
+                      <ul className="text-center mx-auto flex justify-around md:p-2">
+                        { techs.map((tech, i) => (
+                          <li key={ i } className="shadow rounded text-sm bg-yellow-200 p-1 mx-1">
+                            { tech }
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="flex justify-around">
+                      <a
+                        href={ github }
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mt-2"
+                      >
+                        Código
+                      </a>
+                      <a
+                        href={ link }
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mt-2"
+                      >
+                        Visitar
+                      </a>
+                    </div>
                   </div>
                 }
               </div>
