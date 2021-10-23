@@ -17,7 +17,7 @@ function ContactBox() {
       m-2 mb-16 p-2 mx-auto w-10/12 md:w-3/12">
       <div className="flex space-x-4 text-lg underline">
         <a
-          href="https://www.linkedin.com/in/icaro-ferreira-gomes-b99681110/"
+          href="https://www.linkedin.com/in/icarofgomes/"
           target="_blank"
           rel="noreferrer noopener"
         >

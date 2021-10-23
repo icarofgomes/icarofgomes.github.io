@@ -14,21 +14,21 @@ function Modal({ handleClick }) {
         <div className="flex flex-col text-center my-1">
           <a
             className="p-2"
-            href="https://api.whatsapp.com/send?phone=5511970772734"
+            href="https://api.whatsapp.com/send?phone=5511930158146"
             target="_blank"
             rel="noreferrer noopener"
           >
             <FontAwesomeIcon icon={ faWhatsapp } />
-            <span className="p-1">11 9970772734</span>
+            <span className="p-1">11 930158146</span>
           </a>
           <a
             className="p-2"
-            href="mailto:icaro.iky@gmail.com"
+            href="mailto:fgomes.icaro@gmail.com"
             target="_blank"
             rel="noreferrer noopener"
           >
             <FontAwesomeIcon icon={ faEnvelope } />
-            <span className="p-1">icaro.iky@gmail.com</span>
+            <span className="p-1">fgomes.icaro@gmail.com</span>
           </a>
         </div>
         <button
